@@ -1,7 +1,8 @@
 # The URL the site will be built for
 base_url = "https://tilde.team/~birabittoh/"
+description = "Tech and privacy ramblings from a random italian dude."
 title = "BiRabittoh"
-description = "test"
+author = "BiRabittoh"
 default_language = "en"
 minify_html = true
 generate_feed = true
@@ -16,11 +17,10 @@ theme = "anemone"
 render_emoji = true
 external_links_target_blank = true
 smart_punctuation = true
-highlight_code = true
+highlight_code = false
 #highlight_theme = "gruvbox-dark"
 
 [extra]
-author = "Marco Andronaco"
 header_nav = [
   { name = "/home/", url = "/" },
   { name = "/about/", url = "/about" },
