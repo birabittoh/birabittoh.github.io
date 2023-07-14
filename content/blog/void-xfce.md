@@ -46,8 +46,10 @@ I don't like `pulseaudio`. Let's replace it with `pipewire` and `wireplumber`.
 su
 xbps-install pipewire wireplumber
 mkdir -p /etc/pipewire/pipewire.conf.d
-sed '/path.*=.*pipewire-media-session/s/{/#{/' /usr/share/pipewire/pipewire.conf > /etc/pipewire/pipewire.conf
-echo 'context.exec = [ { path = "/usr/bin/wireplumber" args = "" } ]' > /etc/pipewire/pipewire.conf.d/10-wireplumber.conf
+sed '/path.*=.*pipewire-media-session/s/{/#{/' \
+/usr/share/pipewire/pipewire.conf > /etc/pipewire/pipewire.conf
+echo 'context.exec = [ { path = "/usr/bin/wireplumber" args = "" } ]' \
+> /etc/pipewire/pipewire.conf.d/10-wireplumber.conf
 ln -s /usr/share/applications/pipewire* /etc/xdg/autostart
 xbps-remove pulseaudio alsa-plugins-pulseaudio
 reboot
@@ -61,7 +63,7 @@ First, visit [Firefox Profilemaker](https://ffprofile.com/) and create a customi
 Then, extract your zip file to the correct destination:
 ```
 sudo xbps-install zip unzip p7zip xarchiver thunar-archive-plugin
-unzip -o ~/Downloads/profile.zip -d ~/.mozilla/firefox/xxxxxxxx.default-default/
+unzip -o ~/Downloads/profile.zip -d ~/.mozilla/firefox/xxxx.default-default/
 ```
 
 Some useful extensions I always install are:
@@ -76,7 +78,8 @@ Some useful extensions I always install are:
 
 Install the last required packages for desktop usability:
 ```
-sudo xbps-install -S xfce4-whiskermenu-plugin xfce4-clipman-plugin xfce4-pulseaudio-plugin xfce4-screenshooter xclip micro neovim mpv yt-dlp
+sudo xbps-install -S vpm xfce4-whiskermenu-plugin xfce4-clipman-plugin \
+xfce4-pulseaudio-plugin xfce4-screenshooter xclip micro neovim mpv yt-dlp
 ```
 
 Remove orphaned and cached packages:
