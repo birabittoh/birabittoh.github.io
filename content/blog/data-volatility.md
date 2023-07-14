@@ -1,6 +1,8 @@
 +++
 title = "Data volatility"
 date = 2022-01-14
+template = "blog-page.html"
+[taxonomies]
 tags = [ "privacy", "foss", "advice" ]
 +++
 

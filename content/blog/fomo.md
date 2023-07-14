@@ -1,6 +1,8 @@
 +++
 title = "My opinion on FOMO"
 date = 2022-03-06
+template = "blog-page.html"
+[taxonomies]
 tags = [ "advice", "minimalism" ]
 +++
 

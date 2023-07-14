@@ -9,7 +9,7 @@ generate_feed = true
 compile_sass = false
 build_search_index = false
 taxonomies = [
-  { name = "tags" },
+  { name = "tags", feed = true },
 ]
 theme = "anemone"
 
@@ -27,3 +27,4 @@ header_nav = [
   { name = "/journal/", url = "/journal" },
   { name = "/blog/", url = "/blog" },
 ]
+default_theme = "dark" # default: 'light'

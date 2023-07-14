@@ -1,6 +1,8 @@
 +++
 title = "Update your mirrors!"
 date = 2023-01-29
+template = "blog-page.html"
+[taxonomies]
 tags = [ "foss", "advice" ]
 +++
 
