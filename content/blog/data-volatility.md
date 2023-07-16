@@ -3,7 +3,7 @@ title = "Data volatility"
 date = 2022-01-14
 template = "blog-page.html"
 [taxonomies]
-tags = [ "privacy", "foss", "advice" ]
+tags = [ "advice", "foss", "privacy" ]
 +++
 
 I tried to access my domain at smol.pub yesterday and I noticed the service went down. Fear started rushing through my veins as I noticed I would have to choose another platform and, most importantly, write everything back from scratch since I don't have a backup. This made me think about the importance of always having a backup stored somewhere.

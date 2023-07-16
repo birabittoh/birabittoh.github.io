@@ -3,7 +3,7 @@ title = "You should probably use Linux"
 date = 2021-04-29
 template = "blog-page.html"
 [taxonomies]
-tags = [ "privacy", "foss", "advice" ]
+tags = [ "advice", "foss", "privacy" ]
 +++
 
 ## Why are you writing this?

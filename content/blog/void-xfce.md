@@ -3,7 +3,7 @@ title = "Modernizing XFCE"
 date = 2023-02-05
 template = "blog-page.html"
 [taxonomies]
-tags = [ "foss", "advice" ]
+tags = [ "advice", "foss" ]
 +++
 
 This article is more of a memo for myself. Since I often re-install Linux systems, I spend a lot of time doing repetitive tasks and often forget some steps, which leads me to waste even more time figuring out what's wrong.

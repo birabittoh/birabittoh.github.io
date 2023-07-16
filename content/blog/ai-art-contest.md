@@ -3,7 +3,7 @@ title = "The AI takeover is near?"
 date = 2022-09-21
 template = "blog-page.html"
 [taxonomies]
-tags = [ "art", "ai" ]
+tags = [ "ai", "art" ]
 +++
 
 ## Context

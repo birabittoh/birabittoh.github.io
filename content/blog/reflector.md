@@ -3,7 +3,7 @@ title = "Update your mirrors!"
 date = 2023-01-29
 template = "blog-page.html"
 [taxonomies]
-tags = [ "foss", "advice" ]
+tags = [ "advice", "foss" ]
 +++
 
 Nah, I'm not talking about [bluetooth mirrors](https://www.bathshack.com/blog/bluetooth-mirrors-everything-you-need-to-know-before-you-buy/). Mirrors are what powers all distros: they're a (de)centralized solution for downloading pre-compiled binaries and scripts for your operating system.
