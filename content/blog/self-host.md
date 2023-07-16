@@ -2,7 +2,6 @@
 title = "Self-hosting Extravaganza"
 date = 2023-07-16
 template = "blog-page.html"
-draft = true
 [taxonomies]
 tags = [ "advice", "foss", "privacy" ]
 +++
