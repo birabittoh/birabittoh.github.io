@@ -55,9 +55,9 @@ Nowadays, I look back and laugh at my previous config; at least I'm (almost) sur
 Since I started my new job, I also began experimenting with Docker and found out it's not as bad as I thought it'd be. I will now let my previous config serve as the perfect example of how NOT to secure your VPS correctly for any self-hosting configuration.
 
 ### Ditch password authentication
-First of all, password authentication. You'll be a lot safer as soon as you disable it. 
+First of all, password authentication. You'll be a lot safer as soon as you disable it.
 
-First of all, having it enabled means you're vulnerable to dictionary and bruteforce attacks. Also, if some new vulnerability is published, the password field is one more way the attacker could send a malicious string to get inside (see [the log4j incident](https://scribe.rip/geekculture/the-log4j-incident-explained-ed0ce6d36df2)).
+Having it enabled means you're vulnerable to dictionary and bruteforce attacks. Also, if some new vulnerability is published, the password field is one more way the attacker could send a malicious string to get inside (see [the log4j incident](https://scribe.rip/geekculture/the-log4j-incident-explained-ed0ce6d36df2)).
 
 A better way of logging into your VPS is through public key authentication.
 
@@ -158,7 +158,7 @@ There's one last step remaining. Invidious and Swag are two separate containers,
 docker network connect swag_default invidious
 ```
 
-Finally, you can go to [https://yt.yourdomain.duckdns.org/](https://yt.yourdomain.duckdns.org/) and check if you can access Invidious through HTTPS.
+Finally, you can visit https://yt.&lt;yourdomain>.duckdns.org/ and check if you can access Invidious through HTTPS.
 
 Note: now that you have a reverse proxy set up, you can remove your `ports:` section entirely from Invidious' `docker-compose.yml`.
 You can do this because the containers are communicating internally to the `swag_default` network, without the need to expose any ports to the outside.
