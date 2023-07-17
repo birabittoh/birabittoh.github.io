@@ -158,7 +158,7 @@ There's one last step remaining. Invidious and Swag are two separate containers,
 docker network connect swag_default invidious
 ```
 
-Finally, you can visit https://yt.&lt;yourdomain>.duckdns.org/ and check if you can access Invidious through HTTPS.
+Finally, you can visit https://yt.&lt;your-domain&gt;.duckdns.org/ and check if you can access Invidious through HTTPS.
 
 Note: now that you have a reverse proxy set up, you can remove your `ports:` section entirely from Invidious' `docker-compose.yml`.
 You can do this because the containers are communicating internally to the `swag_default` network, without the need to expose any ports to the outside.

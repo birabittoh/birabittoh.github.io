@@ -19,5 +19,5 @@
 
 ## Contact
   - Email: [birabittoh[at]tilde[dot]team](mailto:birabittoh@tilde.team)
-  - Code: [github.com](https://github.com/BiRabittoh), [tilde.institute](https://git.tilde.institute/birabittoh)
+  - Code: [github](https://github.com/BiRabittoh), [tildegit](https://tildegit.org/BiRabittoh)
   - {{ metaData(content="@BiRabittoh") }} anywhere else.
