@@ -5,7 +5,7 @@ title = "BiRabittoh"
 author = "BiRabittoh"
 default_language = "en"
 minify_html = true
-generate_feed = true
+generate_feeds = true
 compile_sass = false
 build_search_index = false
 taxonomies = [
@@ -24,7 +24,7 @@ highlight_code = false
 header_nav = [
   { name = "/home/", url = "/" },
   { name = "/about/", url = "/about" },
-  { name = "/journal/", url = "/journal" },
+  { name = "/links/", url = "/links" },
   { name = "/blog/", url = "/blog" },
 ]
 default_theme = "dark" # default: 'light'
