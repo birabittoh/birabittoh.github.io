@@ -4,10 +4,18 @@ title = "About me"
 
 <img style="display: block; margin-inline: auto; margin-bottom: 10px;" src="/img/me.jpg"/>
 
-Italian male born in 1998; I've been programming since 2016 and I love it. I enjoy art in every form, including video-games, as well as every kind of humor. I usually hang around on Discord while programming stuff I'll probably never actually get finished.
+Italian, born in 1998, programming since 2016. I enjoy art in every form. 
 
-While Italian is my main language, I can read and write in English. I'm a fast learner on any kind of programming language as long as it follows basic human logic.
+_BiRabittoh_ comes from the Japanese pronunciation of "B-Rabbit", as said in Pandora Hearts, which was the first anime I ever watched on the internet.
 
-BiRabittoh, my nickname, comes from the Japanese pronunciation of "B-Rabbit", as said in Pandora Hearts, which was the first anime I ever watched on the internet.
+I mostly like singleplayer games, although I have spent a good chunk of my life on [osu!](https://osu.ppy.sh/) and [Dead by Daylight](https://deadbydaylight.com/).
 
-Finally, I love sending and receiving emails; feel free to use them for business inquiries or even if you just want to chat.
+Rhythm games and JRPGs are my cup of tea, but I also like collect-a-thon platformers and any kind of experimental indie game. I'm also in love with Nintendo games: I have played and loved every mainline Mario and Zelda title.
+
+My favorite games of all time, in no particular order, are [MOTHER 3](https://www.nintendo.co.jp/n08/a3uj/index.html), [Dragon Quest V](https://www.jp.square-enix.com/dqsp/dq5/en/) and [Outer Wilds](https://www.mobiusdigitalgames.com/outer-wilds.html).
+
+As far as music goes, I only listen to a few authors. My favorites are Tally Hall, Tame Impala and early Twenty One Pilots.
+
+I don't watch a lot of movies and TV shows, sadly. Breaking Bad definitely kept me hooked, but I didn't watch Better Call Saul yet.
+
+A guilty pleasure of mine is anime that doesn't take itself too seriously: I absolutely loved JoJo's Bizarre Adventures and Tengen Toppa Gurren Lagann, as well as One Punch Man (S1).

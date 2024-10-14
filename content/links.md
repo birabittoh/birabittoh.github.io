@@ -14,3 +14,4 @@ title = "Cool stuff and people"
 ## People
 - [m15o](https://m15o.ichi.city/site/home.html)
 - [melonking](https://melonking.net/)
+- [Cake](https://cakey.me/)
