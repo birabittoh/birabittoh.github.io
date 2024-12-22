@@ -6,19 +6,19 @@ template = "blog-page.html"
 tags = [ "advice", "foss", "privacy" ]
 +++
 
-Lately, more and more companies are putting their services behind paywalls, usage limits and closed APIs. Some examples are [Twitter](https://nitter.it/elonmusk/status/1675187969420828672) limiting the number of tweets a non-paying user can read, [Reddit](https://www.redditinc.com/blog/2023apiupdates) increasing their API price to an extent that's unbearable for any normal individual and [YouTube](https://libreddit.kavin.rocks/r/youtube/comments/14kmd07/youtube_cracking_down_on_if_youre_not_paying_them/) starting to block their service towards anyone using an adblock extension.
+Lately, more and more companies are putting their services behind paywalls, usage limits and closed APIs. Some examples are [Twitter](https://nitter.privacydev.net/elonmusk/status/1675187969420828672) limiting the number of tweets a non-paying user can read, [Reddit](https://www.redditinc.com/blog/2023apiupdates) increasing their API price to an extent that's unbearable for any normal individual and [YouTube](https://redlib.perennialte.ch/r/youtube/comments/14kmd07/youtube_cracking_down_on_if_youre_not_paying_them/) starting to block their service towards anyone using an adblock extension.
 
 ## There must be a better way
 Luckily, I've been interested in [alternative front-ends](https://github.com/mendel5/alternative-front-ends) for a while. These services allow you to get the same (or better) functionality as their corporate counterpart without giving away any of your information in return. Some of these even offer their own free APIs.
 
 Here's my favorite instances with respect to the service they provide:
 
-| Service | PC                                         | Mobile                                                                          |
-|---------|--------------------------------------------|---------------------------------------------------------------------------------|
-| YouTube | [Invidious](https://y.com.sb/)             | [NewPipe](https://apt.izzysoft.de/fdroid/index/apk/org.polymorphicshade.newpipe)|
-| Twitter | [Nitter](https://nitter.it)                | [Squawker](https://apt.izzysoft.de/fdroid/index/apk/org.ca.squawker)            |
-| Reddit  | [LibReddit](https://libreddit.kavin.rocks) | [LibReddit](https://libreddit.kavin.rocks)                                      |
-| Medium  | [Scribe](https://scribe.rip)               | [Scribe](https://scribe.rip/)                                                   |
+| Service | PC                                       | Mobile                                                                           |
+|---------|------------------------------------------|----------------------------------------------------------------------------------|
+| YouTube | [Invidious](https://yewtu.be/)           | [Tubular](https://apt.izzysoft.de/fdroid/index/apk/org.polymorphicshade.tubular) |
+| Twitter | [Nitter](https://nitter.privacydev.net/) | [Squawker](https://apt.izzysoft.de/fdroid/index/apk/org.ca.squawker)             |
+| Reddit  | [RedLib](https://redlib.perennialte.ch/) | [RedLib](https://redlib.perennialte.ch/)                                         |
+| Medium  | [Scribe](https://scribe.rip)             | [Scribe](https://scribe.rip/)                                                    |
 
 ## Drawbacks
 Of course, this is not a perfect solution. There are a lot of problems to be discussed.
@@ -41,7 +41,7 @@ Anything public you use can be subject to this phenomenon, leading to poor user 
 
 ## Fine, I'll do it myself
 
-Since joining the world of minimalism, I had always considered Docker as a bloated way to run multiple virtual machines. I read about people complaining that even simple Python scripts were providing `Dockerfile` and `docker-compose.yml` files and I started seeing it as a bloaty way to achieve the same result.
+Since joining the world of minimalism, I had always considered Docker as a bloated way to run multiple virtual machines. I read about people complaining that even simple Python scripts were providing `Dockerfile` and `compose.yml` files and I started seeing it as a bloaty way to achieve the same result.
 
 Whenever I wanted to host anything by myself, I used to SSH into my VPS with password authentication (!!!)  and expose a public port for each service (!!!).
 I used my public IP address to log into my services, so I had to resort to sending cleartext passwords through HTTP (!!!) since TLS was not an option.
@@ -62,7 +62,7 @@ Having it enabled means you're vulnerable to dictionary and bruteforce attacks. 
 A better way of logging into your VPS is through public key authentication.
 
 First, generate a key on your own PC:
-```
+```sh
 ssh-keygen -t ed25519 -a 100
 ```
 
@@ -70,15 +70,18 @@ This will create two files: `~/.ssh/id_ed25519.pub` and `~/.ssh/id_ed25519`
 
 Now, use the following command to copy your key over to the VPS:
 
-```
-ssh-copy-id -i ~/.ssh/id_ed25519 <user>@<host>
+```sh
+ssh-copy-id -i ~/.ssh/id_ed25519 <user>@<ip>
 ```
 
-At this point, if everything went correctly, just add or change the following line in `/etc/ssh/sshd_config`:
-```
+At this point, if everything went correctly, just add or change the following lines in `/etc/ssh/sshd_config` on your VPS:
+```sh
 PasswordAuthentication no
+PermitRootLogin no
+PubkeyAuthentication yes
+AuthorizedKeysFile .ssh/authorized_keys
 ```
-At this point, you should be able to log into your VPS without the need to input your password, which is more secure as well as more convenient.
+At this point, you should be able to log into your VPS without the need to input your password, which is more secure AND more convenient.
 
 I keep the content of my public and private ssh key files saved as secure notes in my BitWarden account, so I can take them to any PC I want to access my VPS from.
 People say this is bad practice (you should only have a key for each host), but I personally feel like it's not that big of a deal compared to the security mess I had going on before.
@@ -89,21 +92,29 @@ Now that you have a safe way to SSH into your machine, you can start hosting you
 First, some terminology:
 * `Dockerfile` files are like a list of ingredients. They contain every dependency needed to build a minimal operating system dedicated to running a program. They're used to build images.
 * `Images` are like recipes. You can create some yourself from a Dockerfile or download them from an external repository. They can be instantiated as containers.
-* `Containers` are like courses. You can instantiate multiple equal courses from the same image and you can actually eat (use) them! They can be managed through `docker-compose`.
-* `docker-compose.yml` files are like menus. They're a convenient way to instantiate and deinstantiate multiple containers in a specific and reproducible configuration. If you're not a developer, you'll be mainly working on these files.
+* `Containers` are like courses. You can instantiate multiple equal courses from the same image and you can actually eat (use) them! They can be managed through `docker compose`.
+* `compose.yml` files are like menus. They're a convenient way to instantiate and deinstantiate multiple containers in a specific and reproducible configuration. If you're not a developer, you'll be mainly working on these files.
 
-To get started with Docker, install `docker` and `docker-compose` via your package manager of choice. If you want an easy start, you can follow [this guide](https://docs.invidious.io/installation/#docker-compose-method-production) to host our own Invidious instance.
+To get started with Docker, install `docker` and `docker-compose` via your package manager of choice. Let's try hosting our own [RedLib](https://github.com/redlib-org/redlib) instance.
 
-It's not that hard, but you might need to read the official [Docker Compose documentation](https://docs.docker.com/compose/) if something doesn't go as planned.
+First, ssh into your VPS and clone the repo:
 
-My advice is to generate an `hmac_key` using `pwgen 20 1` or `openssl rand -hex 20` and insert it in the correct spot inside `docker-compose.yml`.
+```sh
+git clone https://github.com/redlib-org/redlib
+cd redlib
+```
 
-Also, remove the `127.0.0.1:` part in the `ports` section since we don't have a reverse proxy set up (yet).
+Then, create your `.env` file:
+```sh
+cp .env.example .env
+```
 
-After you're done configuring, you can type `docker-compose up -d` to pull all required images and instantiate your containers, and `docker-compose down` if you want to stop and remove everything.
+The redlib repo includes a `compose.yaml` file. You can start the service by running `docker compose up -d`, then test if you can reach your service by querying http://&lt;your-ip&gt;:8080.
+
+When you want to stop the service, just run `docker compose down` to stop and delete all of its related containers.
 
 ### Use a reverse proxy
-If you've followed that guide correctly, you should now have two containers that communicate through a network. You can find out their names by running `docker ps -a`. Take note of the name of your main invidious container, which will be referred as `invidious` for the rest of this guide.
+You should now have exposed port 8080 of your container to the internet.
 
 Problem is, you're still using an IP address and communicating in cleartext through HTTP! This means your ISP can read every single detail in every single request you make.
 
@@ -111,26 +122,65 @@ Luckily, there is a way to get a cool domain name for free that also happens to 
 
 First, create an account on [DuckDNS](https://www.duckdns.org/) and set up a free domain.
 
-Just make a new directory near the one you used for Invidious and create a new `docker-compose.yml`:
+Just make a new directory near the one you used for RedLib and create a new `compose.yaml` file:
 ```
 mkdir swag
 cd swag
-nano docker-compose.yml
+nano compose.yaml
 ```
-You can paste and edit accordingly the lines in [this guide](https://docs.linuxserver.io/general/swag#creating-a-swag-container).
 
-For example, instead of `DNSPLUGIN=cloudflare` you should have `DNSPLUGIN=duckdns`.
+Here's a good starting point for `compose.yaml`:
+```yaml
+services:
+    swag:
+        image: 'ghcr.io/linuxserver/swag'
+        container_name: 'swag'
+        cap_add:
+            - 'NET_ADMIN'
+        environment:
+          PUID: '1000'
+          PGID: '1000'
+          TZ: 'Europe/Rome'
+          URL: '<your-domain>.duckdns.org'
+          SUBDOMAINS: 'wildcard'
+          VALIDATION: 'duckdns'
+          DUCKDNSTOKEN: '<your-token>'
+          EMAIL: '<your-email>'
+          ONLY_SUBDOMAINS: 'false'
+          STAGING: 'false'
+        volumes:
+            - 'data:/config'
+            - './www:/config/www'
+            - './proxy-confs:/config/nginx/proxy-confs'
+        ports:
+            - '443:443'
+            - '80:80'
+        restart: 'unless-stopped'
 
-When you're done, start your container with `docker-compose up -d`. This will create the config folder in `/etc/config/swag` as well as a new network called `swag_default`.
-
-Now we need to create a custom subdomain for Invidious. You can do it by creating the following file: `/etc/config/swag/nginx/proxy-confs/invidious.subdomain.conf` with this content:
-
+volumes:
+  data:
 ```
+
+Check out [this guide](https://docs.linuxserver.io/general/swag#creating-a-swag-container) if you need more info.
+
+When you're done, start your container with `docker compose up -d`. This will create the swag_data volume, as well as a new network called `swag_default` and two directories named `www` and `proxy-confs`.
+
+Now we need to create a custom subdomain for RedLib. You can do it by creating a new file in `proxy-confs`:
+```sh
+cd proxy-confs
+nano redlib.subdomain.conf
+```
+
+Then paste the following content:
+
+```sql
 server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
+    listen 443 ssl;
+    listen [::]:443 ssl;
 
-    server_name y.*;
+    http2 on;
+
+    server_name r.*;
 
     include /config/nginx/ssl.conf;
 
@@ -139,8 +189,8 @@ server {
     location / {
         include /config/nginx/proxy.conf;
         include /config/nginx/resolver.conf;
-        set $upstream_app invidious;
-        set $upstream_port 3000;
+        set $upstream_app redlib;
+        set $upstream_port 8080;
         set $upstream_proto http;
         proxy_pass $upstream_proto://$upstream_app:$upstream_port;
     }
@@ -148,21 +198,57 @@ server {
 ```
 
 Where:
-* `server_name yt.*`: `yt` is the subdomain of choice;
-* `set $upstream_app invidious;`: `invidious` is the name of the main Invidious container;
-* `set $upstream_port 3000;`: `3000` is the Invidious port.
+* `server_name r.*`: `r` is your subdomain of choice;
+* `set $upstream_app redlib;`: `redlib` is the name of the RedLib container;
+* `set $upstream_port 8080;`: `8080` is the RedLib port.
 
-There's one last step remaining. Invidious and Swag are two separate containers, so they cannot communicate unless they're connected to the same network. You can connect Invidious to Swag's network with the following command, where `invidious` is the name of your main Invidious container.
+There's one last step remaining. RedLib and Swag are two separate containers, so they cannot communicate unless they're connected to the same network.
 
+RedLib's `compose.yaml` specifies a custom `redlib` network, while swag has its own `swag_default` network. Instead of the `redlib` network, we want our RedLib container to connect to `swag_default`.
+To do this, cd to your `redlib` directory and make your own copy of `compose.yaml`:
+
+```sh
+cd ~/redlib
+cp compose.yaml compose.custom.yaml
+nano compose.custom.yaml
 ```
-docker network connect swag_default invidious
+
+Now we can remove the `ports` section and add `swag_default` as an external network the container should connect to.
+
+The final result should look something like this:
+```yaml
+services:
+  redlib:
+    image: quay.io/redlib/redlib:latest
+    restart: always
+    container_name: "redlib"
+    user: nobody
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+      # - seccomp=seccomp-redlib.json
+    cap_drop:
+      - ALL
+    env_file: .env
+    networks:
+      - swag_default # changed
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "--tries=1", "http://localhost:8080/settings"]
+      interval: 5m
+      timeout: 3s
+
+networks:
+  swag_default: # changed
+    external: true # changed
 ```
 
-Finally, you can visit https://yt.&lt;your-domain&gt;.duckdns.org/ and check if you can access Invidious through HTTPS.
+Then, apply your updates by stopping the old configuration and starting the new one:
+```sh
+docker compose down
+docker compose -f compose.custom.yaml up -d
+```
 
-Note: now that you have a reverse proxy set up, you can remove your `ports:` section entirely from Invidious' `docker-compose.yml`.
-You can do this because the containers are communicating internally to the `swag_default` network, without the need to expose any ports to the outside.
-After you're done, remember to reload your configuration by running `docker-compose restart` in your Invidious folder.
+Finally, you can visit https://r.&lt;your-domain&gt;.duckdns.org/ and check if you can access RedLib through HTTPS.
 
 Ideally, the only container with exposed ports in your VPS should be Swag exposing ports 80 (HTTP) and 443 (HTTPS).
 
