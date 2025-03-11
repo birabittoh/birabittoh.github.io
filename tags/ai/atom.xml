@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>BiRabittoh - ai</title>
+    <subtitle>Tech and privacy ramblings from a random italian dude.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://birabittoh.github.io/tags/ai/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://birabittoh.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-09-21T00:00:00+00:00</updated>
+    <id>https://birabittoh.github.io/tags/ai/atom.xml</id>
+    <entry xml:lang="en">
+        <title>The AI takeover is near?</title>
+        <published>2022-09-21T00:00:00+00:00</published>
+        <updated>2022-09-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              BiRabittoh
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://birabittoh.github.io/blog/ai-art-contest/"/>
+        <id>https://birabittoh.github.io/blog/ai-art-contest/</id>
+        
+        <content type="html" xml:base="https://birabittoh.github.io/blog/ai-art-contest/">&lt;h2 id=&quot;context&quot;&gt;Context&lt;&#x2F;h2&gt;
+&lt;p&gt;August 29, 2022.
+The Colorado State Fair gives out prizes for various art categories in a contest. Let’s have a look at &lt;em&gt;Théâtre D’opéra Spatial&lt;&#x2F;em&gt;, the winner for category no.5: &lt;em&gt;Digital Arts &#x2F; Digitally-Manipulated Photography&lt;&#x2F;em&gt; (&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;coloradostatefair.com&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;08&#x2F;2022-Fine-Arts-First-Second-Third.pdf&quot;&gt;leaderboard&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.tuttotech.net&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;09&#x2F;Intelligenza-artificiale-quadro-1.jpg&quot; alt=&quot;Théâtre D’opéra Spatial&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;That same day, a heated debate started on Twitter (as if that weren’t the norm there). That’s because the winner of this art contest used Midjourney, a popular AI image generator, to generate their entry.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We’re watching the death of artistry unfold right before our eyes — if creative jobs aren’t safe from machines, then even high-skilled jobs are in danger of becoming obsolete&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nitter.it&#x2F;omnimorpho&#x2F;status&#x2F;1564782875072872450&quot;&gt;@OmniMorpho&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-debate&quot;&gt;The debate&lt;&#x2F;h2&gt;
+&lt;p&gt;While you could argue that the effort the creator (Jason M. Allen) put in was minuscule in comparison to the years of study and preparation an artist needs to undertake, I don’t think that actually matters when it comes to winning a competition or making an artpiece in general.&lt;&#x2F;p&gt;
+&lt;p&gt;First of all, &lt;em&gt;art is totally subjective&lt;&#x2F;em&gt;. I could spend 5 seconds drawing a stick figure in MSPaint and have a contemporary art critique tell me it’s garbage, while people from another age might see a complaint towards modern, lifeless technology. This feels like a hyperbole, but I don’t think it’s that far from reality.&lt;&#x2F;p&gt;
+&lt;p&gt;In 1961 Italian artist Piero Manzoni put his &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Artist%27s_Shit&quot;&gt;literal feces&lt;&#x2F;a&gt; in 90 cans and sold them as an artpiece. He also created a “magic base”, in the sense that you could put anything or anyone on it and that would become an artpiece in itself.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;c&#x2F;c2&#x2F;Piero_Manzoni_-_Merda_D%27artista_%281961%29_-_panoramio.jpg&quot; alt=&quot;Merda d’artista&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;He created this because he saw &lt;em&gt;art as a relic of the artist&lt;&#x2F;em&gt;. Any object or even person can become an art piece if an artist puts his sign on it. But how do you become an artist? By making something that makes people discuss, something new and innovative that nobody ever thought about doing before. That’s what Mr. Allen did and that’s why I think he deserves his price.&lt;&#x2F;p&gt;
+&lt;p&gt;Before photography was invented, artists generally strove to make their painting as realistic as possible. As soon as people were able to cheaply make perfect copies of reality, artists began experimenting with new techniques, things that a camera could never do. Allen showed everyone how technology just reached a new milestone, introducing a new need for artists to innovate and create something exclusive to their abilities. Something an AI can’t reproduce. Yet.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;a-slight-hole-in-this-argument&quot;&gt;A slight hole in this argument&lt;&#x2F;h2&gt;
+&lt;p&gt;But wait. The competition judges did not know he used an AI to make his art piece. So how could they have considered it innovative and revolutionary?&lt;&#x2F;p&gt;
+&lt;p&gt;If you take a look at the 2nd and 3rd entries of the contest, you’ll see they’re clearly made by humans and clearly have a symbolic value. This does not apply to Allen’s entry, which is just VERY good looking. If I were a judge, I would not have chosen Allen’s work to win the competition, but again, &lt;em&gt;art is subjective&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I tried to find out more about the criteria for the evaluation of this contest’s entries and I found this:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“And there should be no lagging or hanging back by anybody who has anything worth exhibiting”&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;coloradostatefair.com&#x2F;competitions&#x2F;general-entry-fine-arts&#x2F;fine-arts-exhibition&#x2F;&quot;&gt;Source&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Also, they wrote this about the “under 18” art showcase:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Art must be original in painting, drawing, sculpture, ceramics, photography, jewelry, and more! Have fun, be creative, enter to win.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;coloradostatefair.com&#x2F;competitions&#x2F;general-entry-fine-arts&#x2F;amateur-art-2&#x2F;&quot;&gt;Source&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;Whichever way you put it, Théâtre D’opéra Spatial deserves to be called an art piece. The judges apparently valued aesthetics more than symbolic meaning, and their opinion cannot be logically disputed. Everyone gives a value to an artpiece based on their personal studies and experiences.&lt;&#x2F;p&gt;
+&lt;p&gt;Now, knowing about the tools he used, we know Allen did something that nobody ever thought (or managed) to do before. If he hadn’t won that contest, this debate would never have started, but he did. That’s what makes him an artist and, consequently, his creation a work of art.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

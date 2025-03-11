@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>BiRabittoh - privacy</title>
+    <subtitle>Tech and privacy ramblings from a random italian dude.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://birabittoh.github.io/tags/privacy/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://birabittoh.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-07-16T00:00:00+00:00</updated>
+    <id>https://birabittoh.github.io/tags/privacy/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Self-hosting Extravaganza</title>
+        <published>2023-07-16T00:00:00+00:00</published>
+        <updated>2023-07-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              BiRabittoh
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://birabittoh.github.io/blog/self-host/"/>
+        <id>https://birabittoh.github.io/blog/self-host/</id>
+        
+        <content type="html" xml:base="https://birabittoh.github.io/blog/self-host/">&lt;p&gt;Lately, more and more companies are putting their services behind paywalls, usage limits and closed APIs. Some examples are &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nitter.privacydev.net&#x2F;elonmusk&#x2F;status&#x2F;1675187969420828672&quot;&gt;Twitter&lt;&#x2F;a&gt; limiting the number of tweets a non-paying user can read, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.redditinc.com&#x2F;blog&#x2F;2023apiupdates&quot;&gt;Reddit&lt;&#x2F;a&gt; increasing their API price to an extent that’s unbearable for any normal individual and &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;redlib.perennialte.ch&#x2F;r&#x2F;youtube&#x2F;comments&#x2F;14kmd07&#x2F;youtube_cracking_down_on_if_youre_not_paying_them&#x2F;&quot;&gt;YouTube&lt;&#x2F;a&gt; starting to block their service towards anyone using an adblock extension.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;there-must-be-a-better-way&quot;&gt;There must be a better way&lt;&#x2F;h2&gt;
+&lt;p&gt;Luckily, I’ve been interested in &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mendel5&#x2F;alternative-front-ends&quot;&gt;alternative front-ends&lt;&#x2F;a&gt; for a while. These services allow you to get the same (or better) functionality as their corporate counterpart without giving away any of your information in return. Some of these even offer their own free APIs.&lt;&#x2F;p&gt;
+&lt;p&gt;Here’s my favorite instances with respect to the service they provide:&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Service&lt;&#x2F;th&gt;&lt;th&gt;PC&lt;&#x2F;th&gt;&lt;th&gt;Mobile&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;YouTube&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;yewtu.be&#x2F;&quot;&gt;Invidious&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;apt.izzysoft.de&#x2F;fdroid&#x2F;index&#x2F;apk&#x2F;org.polymorphicshade.tubular&quot;&gt;Tubular&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Twitter&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nitter.privacydev.net&#x2F;&quot;&gt;Nitter&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;apt.izzysoft.de&#x2F;fdroid&#x2F;index&#x2F;apk&#x2F;org.ca.squawker&quot;&gt;Squawker&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Reddit&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;redlib.perennialte.ch&#x2F;&quot;&gt;RedLib&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;redlib.perennialte.ch&#x2F;&quot;&gt;RedLib&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Medium&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;scribe.rip&quot;&gt;Scribe&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;scribe.rip&#x2F;&quot;&gt;Scribe&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;drawbacks&quot;&gt;Drawbacks&lt;&#x2F;h2&gt;
+&lt;p&gt;Of course, this is not a perfect solution. There are a lot of problems to be discussed.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;privacy&quot;&gt;Privacy&lt;&#x2F;h3&gt;
+&lt;p&gt;First and foremost, these instances do not make any profit. This is not a problem until you really think about it. Can you really trust a random developer offering a (paid) service for thousands of users out of their own kindness?
+The answer is “probably yes”, but are you willing to take this risk?&lt;&#x2F;p&gt;
+&lt;p&gt;Instance admins could easily edit the upstream source code to make it so they can track their users indefinetly and sell usage data without them even realizing.
+This is a given if you use any “normal” (not self-hosted) service, but the difference is big companies are &lt;em&gt;required&lt;&#x2F;em&gt; by GDPR to protect collected user data in a certain way and keep them for a maximum set amount of time.&lt;&#x2F;p&gt;
+&lt;p&gt;The same cannot be assured for individuals who apparently don’t even make a profit for what they’re doing.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;scaling&quot;&gt;Scaling&lt;&#x2F;h3&gt;
+&lt;p&gt;This buzzword has become a meme in the programming world, but it’s been shown how important it is to consider when dealing with large userbases that can grow exponentially without any warning.&lt;&#x2F;p&gt;
+&lt;p&gt;Think about the amount of users who migrated to Mastodon immediately after Elon Musk acquired Twitter. Instance admins were used to having a couple hundred users, so hundred of thousands of new signups made a lot of popular instances slow down or even temporarily shut down while they migrated to new (and more expensive) hardware.&lt;&#x2F;p&gt;
+&lt;p&gt;Anything public you use can be subject to this phenomenon, leading to poor user experience, as you’ll be one of the many people wondering why your feed takes one minute to load.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;fine-i-ll-do-it-myself&quot;&gt;Fine, I’ll do it myself&lt;&#x2F;h2&gt;
+&lt;p&gt;Since joining the world of minimalism, I had always considered Docker as a bloated way to run multiple virtual machines. I read about people complaining that even simple Python scripts were providing &lt;code&gt;Dockerfile&lt;&#x2F;code&gt; and &lt;code&gt;compose.yml&lt;&#x2F;code&gt; files and I started seeing it as a bloaty way to achieve the same result.&lt;&#x2F;p&gt;
+&lt;p&gt;Whenever I wanted to host anything by myself, I used to SSH into my VPS with password authentication (!!!)  and expose a public port for each service (!!!).
+I used my public IP address to log into my services, so I had to resort to sending cleartext passwords through HTTP (!!!) since TLS was not an option.&lt;&#x2F;p&gt;
+&lt;p&gt;Of course, this is possibly the most insecure way to host services on a public server, but I felt that was “secure enough” and nobody would ever be interested in hacking me (!!! × ∞).&lt;&#x2F;p&gt;
+&lt;p&gt;Nonetheless, I used to &lt;code&gt;cat &#x2F;var&#x2F;log&#x2F;auth.log&lt;&#x2F;code&gt; to see all the failed login attempts, and pray that nobody actually got my password right.
+Nowadays, I look back and laugh at my previous config; at least I’m (almost) sure that nobody actually managed to get in.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-right-way&quot;&gt;The right way&lt;&#x2F;h2&gt;
+&lt;p&gt;Since I started my new job, I also began experimenting with Docker and found out it’s not as bad as I thought it’d be. I will now let my previous config serve as the perfect example of how NOT to secure your VPS correctly for any self-hosting configuration.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;ditch-password-authentication&quot;&gt;Ditch password authentication&lt;&#x2F;h3&gt;
+&lt;p&gt;First of all, password authentication. You’ll be a lot safer as soon as you disable it.&lt;&#x2F;p&gt;
+&lt;p&gt;Having it enabled means you’re vulnerable to dictionary and bruteforce attacks. Also, if some new vulnerability is published, the password field is one more way the attacker could send a malicious string to get inside (see &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;scribe.rip&#x2F;geekculture&#x2F;the-log4j-incident-explained-ed0ce6d36df2&quot;&gt;the log4j incident&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;A better way of logging into your VPS is through public key authentication.&lt;&#x2F;p&gt;
+&lt;p&gt;First, generate a key on your own PC:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;ssh-keygen -t ed25519 -a 100
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This will create two files: &lt;code&gt;~&#x2F;.ssh&#x2F;id_ed25519.pub&lt;&#x2F;code&gt; and &lt;code&gt;~&#x2F;.ssh&#x2F;id_ed25519&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Now, use the following command to copy your key over to the VPS:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;ssh-copy-id -i ~&amp;#x2F;.ssh&amp;#x2F;id_ed25519 &amp;lt;user&amp;gt;@&amp;lt;ip&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;At this point, if everything went correctly, just add or change the following lines in &lt;code&gt;&#x2F;etc&#x2F;ssh&#x2F;sshd_config&lt;&#x2F;code&gt; on your VPS:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;PasswordAuthentication no
+PermitRootLogin no
+PubkeyAuthentication yes
+AuthorizedKeysFile .ssh&amp;#x2F;authorized_keys
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;At this point, you should be able to log into your VPS without the need to input your password, which is more secure AND more convenient.&lt;&#x2F;p&gt;
+&lt;p&gt;I keep the content of my public and private ssh key files saved as secure notes in my BitWarden account, so I can take them to any PC I want to access my VPS from.
+People say this is bad practice (you should only have a key for each host), but I personally feel like it’s not that big of a deal compared to the security mess I had going on before.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;containerize-your-applications&quot;&gt;Containerize your applications&lt;&#x2F;h3&gt;
+&lt;p&gt;Now that you have a safe way to SSH into your machine, you can start hosting your own services.&lt;&#x2F;p&gt;
+&lt;p&gt;First, some terminology:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Dockerfile&lt;&#x2F;code&gt; files are like a list of ingredients. They contain every dependency needed to build a minimal operating system dedicated to running a program. They’re used to build images.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Images&lt;&#x2F;code&gt; are like recipes. You can create some yourself from a Dockerfile or download them from an external repository. They can be instantiated as containers.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Containers&lt;&#x2F;code&gt; are like courses. You can instantiate multiple equal courses from the same image and you can actually eat (use) them! They can be managed through &lt;code&gt;docker compose&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;compose.yml&lt;&#x2F;code&gt; files are like menus. They’re a convenient way to instantiate and deinstantiate multiple containers in a specific and reproducible configuration. If you’re not a developer, you’ll be mainly working on these files.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;To get started with Docker, install &lt;code&gt;docker&lt;&#x2F;code&gt; and &lt;code&gt;docker-compose&lt;&#x2F;code&gt; via your package manager of choice. Let’s try hosting our own &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;redlib-org&#x2F;redlib&quot;&gt;RedLib&lt;&#x2F;a&gt; instance.&lt;&#x2F;p&gt;
+&lt;p&gt;First, ssh into your VPS and clone the repo:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;git clone https:&amp;#x2F;&amp;#x2F;github.com&amp;#x2F;redlib-org&amp;#x2F;redlib
+cd redlib
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then, create your &lt;code&gt;.env&lt;&#x2F;code&gt; file:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;cp .env.example .env
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The redlib repo includes a &lt;code&gt;compose.yaml&lt;&#x2F;code&gt; file. You can start the service by running &lt;code&gt;docker compose up -d&lt;&#x2F;code&gt;, then test if you can reach your service by querying http:&#x2F;&#x2F;&amp;lt;your-ip&amp;gt;:8080.&lt;&#x2F;p&gt;
+&lt;p&gt;When you want to stop the service, just run &lt;code&gt;docker compose down&lt;&#x2F;code&gt; to stop and delete all of its related containers.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;use-a-reverse-proxy&quot;&gt;Use a reverse proxy&lt;&#x2F;h3&gt;
+&lt;p&gt;You should now have exposed port 8080 of your container to the internet.&lt;&#x2F;p&gt;
+&lt;p&gt;Problem is, you’re still using an IP address and communicating in cleartext through HTTP! This means your ISP can read every single detail in every single request you make.&lt;&#x2F;p&gt;
+&lt;p&gt;Luckily, there is a way to get a cool domain name for free that also happens to include free and auto-generated TLS certificates.&lt;&#x2F;p&gt;
+&lt;p&gt;First, create an account on &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.duckdns.org&#x2F;&quot;&gt;DuckDNS&lt;&#x2F;a&gt; and set up a free domain.&lt;&#x2F;p&gt;
+&lt;p&gt;Just make a new directory near the one you used for RedLib and create a new &lt;code&gt;compose.yaml&lt;&#x2F;code&gt; file:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir swag
+cd swag
+nano compose.yaml
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Here’s a good starting point for &lt;code&gt;compose.yaml&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;yaml&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;services:
+    swag:
+        image: &amp;#x27;ghcr.io&amp;#x2F;linuxserver&amp;#x2F;swag&amp;#x27;
+        container_name: &amp;#x27;swag&amp;#x27;
+        cap_add:
+            - &amp;#x27;NET_ADMIN&amp;#x27;
+        environment:
+          PUID: &amp;#x27;1000&amp;#x27;
+          PGID: &amp;#x27;1000&amp;#x27;
+          TZ: &amp;#x27;Europe&amp;#x2F;Rome&amp;#x27;
+          URL: &amp;#x27;&amp;lt;your-domain&amp;gt;.duckdns.org&amp;#x27;
+          SUBDOMAINS: &amp;#x27;wildcard&amp;#x27;
+          VALIDATION: &amp;#x27;duckdns&amp;#x27;
+          DUCKDNSTOKEN: &amp;#x27;&amp;lt;your-token&amp;gt;&amp;#x27;
+          EMAIL: &amp;#x27;&amp;lt;your-email&amp;gt;&amp;#x27;
+          ONLY_SUBDOMAINS: &amp;#x27;false&amp;#x27;
+          STAGING: &amp;#x27;false&amp;#x27;
+        volumes:
+            - &amp;#x27;data:&amp;#x2F;config&amp;#x27;
+            - &amp;#x27;.&amp;#x2F;www:&amp;#x2F;config&amp;#x2F;www&amp;#x27;
+            - &amp;#x27;.&amp;#x2F;proxy-confs:&amp;#x2F;config&amp;#x2F;nginx&amp;#x2F;proxy-confs&amp;#x27;
+        ports:
+            - &amp;#x27;443:443&amp;#x27;
+            - &amp;#x27;80:80&amp;#x27;
+        restart: &amp;#x27;unless-stopped&amp;#x27;
+
+volumes:
+  data:
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Check out &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.linuxserver.io&#x2F;general&#x2F;swag#creating-a-swag-container&quot;&gt;this guide&lt;&#x2F;a&gt; if you need more info.&lt;&#x2F;p&gt;
+&lt;p&gt;When you’re done, start your container with &lt;code&gt;docker compose up -d&lt;&#x2F;code&gt;. This will create the swag_data volume, as well as a new network called &lt;code&gt;swag_default&lt;&#x2F;code&gt; and two directories named &lt;code&gt;www&lt;&#x2F;code&gt; and &lt;code&gt;proxy-confs&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Now we need to create a custom subdomain for RedLib. You can do it by creating a new file in &lt;code&gt;proxy-confs&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;cd proxy-confs
+nano redlib.subdomain.conf
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then paste the following content:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+
+    http2 on;
+
+    server_name r.*;
+
+    include &amp;#x2F;config&amp;#x2F;nginx&amp;#x2F;ssl.conf;
+
+    client_max_body_size 0;
+
+    location &amp;#x2F; {
+        include &amp;#x2F;config&amp;#x2F;nginx&amp;#x2F;proxy.conf;
+        include &amp;#x2F;config&amp;#x2F;nginx&amp;#x2F;resolver.conf;
+        set $upstream_app redlib;
+        set $upstream_port 8080;
+        set $upstream_proto http;
+        proxy_pass $upstream_proto:&amp;#x2F;&amp;#x2F;$upstream_app:$upstream_port;
+    }
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Where:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;server_name r.*&lt;&#x2F;code&gt;: &lt;code&gt;r&lt;&#x2F;code&gt; is your subdomain of choice;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;set $upstream_app redlib;&lt;&#x2F;code&gt;: &lt;code&gt;redlib&lt;&#x2F;code&gt; is the name of the RedLib container;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;set $upstream_port 8080;&lt;&#x2F;code&gt;: &lt;code&gt;8080&lt;&#x2F;code&gt; is the RedLib port.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;There’s one last step remaining. RedLib and Swag are two separate containers, so they cannot communicate unless they’re connected to the same network.&lt;&#x2F;p&gt;
+&lt;p&gt;RedLib’s &lt;code&gt;compose.yaml&lt;&#x2F;code&gt; specifies a custom &lt;code&gt;redlib&lt;&#x2F;code&gt; network, while swag has its own &lt;code&gt;swag_default&lt;&#x2F;code&gt; network. Instead of the &lt;code&gt;redlib&lt;&#x2F;code&gt; network, we want our RedLib container to connect to &lt;code&gt;swag_default&lt;&#x2F;code&gt;.
+To do this, cd to your &lt;code&gt;redlib&lt;&#x2F;code&gt; directory and make your own copy of &lt;code&gt;compose.yaml&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;cd ~&amp;#x2F;redlib
+cp compose.yaml compose.custom.yaml
+nano compose.custom.yaml
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now we can remove the &lt;code&gt;ports&lt;&#x2F;code&gt; section and add &lt;code&gt;swag_default&lt;&#x2F;code&gt; as an external network the container should connect to.&lt;&#x2F;p&gt;
+&lt;p&gt;The final result should look something like this:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;yaml&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;services:
+  redlib:
+    image: quay.io&amp;#x2F;redlib&amp;#x2F;redlib:latest
+    restart: always
+    container_name: &amp;quot;redlib&amp;quot;
+    user: nobody
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+      # - seccomp=seccomp-redlib.json
+    cap_drop:
+      - ALL
+    env_file: .env
+    networks:
+      - swag_default # changed
+    healthcheck:
+      test: [&amp;quot;CMD&amp;quot;, &amp;quot;wget&amp;quot;, &amp;quot;--spider&amp;quot;, &amp;quot;-q&amp;quot;, &amp;quot;--tries=1&amp;quot;, &amp;quot;http:&amp;#x2F;&amp;#x2F;localhost:8080&amp;#x2F;settings&amp;quot;]
+      interval: 5m
+      timeout: 3s
+
+networks:
+  swag_default: # changed
+    external: true # changed
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then, apply your updates by stopping the old configuration and starting the new one:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; class=&quot;language-sh &quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;docker compose down
+docker compose -f compose.custom.yaml up -d
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Finally, you can visit https:&#x2F;&#x2F;r.&amp;lt;your-domain&amp;gt;.duckdns.org&#x2F; and check if you can access RedLib through HTTPS.&lt;&#x2F;p&gt;
+&lt;p&gt;Ideally, the only container with exposed ports in your VPS should be Swag exposing ports 80 (HTTP) and 443 (HTTPS).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;Self-hosting is not easy. It’s been my &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.froth.zone&#x2F;wiki&#x2F;Camino_de_Santiago&quot;&gt;Camino de Santiago&lt;&#x2F;a&gt;: a long path of redemption for the sins I have committed in my young age.
+Even if I made a lot of mistakes, in the end I’ve learned a lot about dev-ops and cybersecurity, as well as precious skills that proved themselves useful for my engineering job.&lt;&#x2F;p&gt;
+&lt;p&gt;You can find a full list of self-hostable services &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;awesome-selfhosted&#x2F;awesome-selfhosted&quot;&gt;here&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Data volatility</title>
+        <published>2022-01-14T00:00:00+00:00</published>
+        <updated>2022-01-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              BiRabittoh
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://birabittoh.github.io/blog/data-volatility/"/>
+        <id>https://birabittoh.github.io/blog/data-volatility/</id>
+        
+        <content type="html" xml:base="https://birabittoh.github.io/blog/data-volatility/">&lt;p&gt;I tried to access my domain at smol.pub yesterday and I noticed the service went down. Fear started rushing through my veins as I noticed I would have to choose another platform and, most importantly, write everything back from scratch since I don’t have a backup. This made me think about the importance of always having a backup stored somewhere.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-though&quot;&gt;Why though&lt;&#x2F;h2&gt;
+&lt;p&gt;Creating a backup of your important data is crucial. On a daily basis, people discover vulnerabilities that allow remote code execution on any host machine. Try to imagine what would happen if someone ran a ransomware program on your PC. Would you be safe?&lt;&#x2F;p&gt;
+&lt;p&gt;This genuinely feels like fearmongery, but it’s something that can seriously happen: you can be attacked by someone that specifically targets you. If you run Windows, you might be part of a botnet (think about all of the unsigned EXE files you’ve run since you installed the OS). What happens when someone doesn’t need your machine anymore? Well, that person might try and squeeze some money from you by holding your files hostage.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cloud-backups&quot;&gt;Cloud backups&lt;&#x2F;h2&gt;
+&lt;p&gt;Most people define cloud storage as follows:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Cloud storage is a way for businesses and consumers to save data securely online so that it can be accessed anytime from any location and easily shared with those who are granted permission. Cloud storage also offers a way to back up data to facilitate recovery off-site.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.investopedia.com&#x2F;terms&#x2F;c&#x2F;cloud-storage.asp&quot;&gt;Investopedia&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;In reality, cloud storage is no more than some dude’s computer.&lt;&#x2F;p&gt;
+&lt;p&gt;As soon as you upload your personal data to any service, you’re trusting it to store it in a safe and private way. If that software is not open source, you’re basically asking to get spied on.&lt;&#x2F;p&gt;
+&lt;p&gt;Most people do not care about that, that’s why cloud storage solutions are very popular and basically enabled by default on any device you might buy nowadays.&lt;&#x2F;p&gt;
+&lt;p&gt;I personally use cloud storage but I would never actually upload anything I actually care about on it…
+If you have to choose, I have a few suggestions.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;don-t-trust-non-encrypted-solutions&quot;&gt;Don’t trust non-encrypted solutions&lt;&#x2F;h3&gt;
+&lt;p&gt;Everybody has a Google account nowadays. If you forget your password, there is a way to recover it and get access to everything inside, including your Google Drive contents. As long as there is a password that can be changed or reset, your files are NOT encrypted and fully visible to anyone who has access to the Drive servers (Google or any other government agency that might want to take a peek).
+Most cloud solutions work like this, and it’s actually frightening how many people trust megacorporations to have all of their private information available unencrypted.&lt;&#x2F;p&gt;
+&lt;p&gt;One encrypted solution I use is mega.nz.
+While I can’t be sure that the mega team isn’t spying on me, at least they’re hiding it well if they do.
+Mega includes an encryption key with your account, which is not tied to your login information.
+This means that if you lose your key, you also lost all of your files, there is absolutely no way to get them back, even if you change your account password.&lt;&#x2F;p&gt;
+&lt;p&gt;Now, Mega is not open source, so you can never be sure that there isn’t any backdoor, or that keys aren’t stored together with your personal information, but at least it’s something.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;encrypt-your-data-yourself&quot;&gt;Encrypt your data yourself&lt;&#x2F;h3&gt;
+&lt;p&gt;If you really need to trust Google, Apple or Amazon with your files, you can encrypt your files locally with the gpg command. This way, feds and big tech are going to need another password to actually access your private files.&lt;&#x2F;p&gt;
+&lt;p&gt;It’s really easy, just two commands mainly.&lt;&#x2F;p&gt;
+&lt;p&gt;Encrypt:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;gpg -c --cipher-algo AES256 secret.file
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Decrypt:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;gpg segret.file.gpg
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If you need to encrypt a folder, you can compress it first:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;tar -cf output.tar.gz secret-folder
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then encrypt your output.tar.gz archive as if it was a single file.&lt;&#x2F;p&gt;
+&lt;p&gt;After decrypting it, you can extract your archive through this command:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;tar -xf output.tar.gz
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Check out Mental Outlaw’s &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;invidio.us&#x2F;M0O7vhvQW30&quot;&gt;video&lt;&#x2F;a&gt; about this very topic.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;local-backups&quot;&gt;Local backups&lt;&#x2F;h2&gt;
+&lt;p&gt;This is the best way to backup your data.
+You don’t need to encrypt it if you have full physical access to your data, but you would still be vulnerable if it gets lost or stolen, so it’s always better to keep it encrypted and safe.&lt;&#x2F;p&gt;
+&lt;p&gt;Of course, if you have a backup hard drive always plugged in your PC, it’s not really secure at all, since one could remotely execute a ransomware that encrypts everything in your PC, including all drives both internal and external, so you would get your backup encrypted with the original files voiding everything you’ve done.&lt;&#x2F;p&gt;
+&lt;p&gt;This is why you should keep a GNU&#x2F;Linux device that only serves backup purposes and is turned OFF most of the time. As long as no current runs through your CPU, your files are safe. You should only turn it on once a month and copy everything important over, so you have a safe and offline backup.&lt;&#x2F;p&gt;
+&lt;p&gt;You could also use a USB stick or external hard drive, as long as you only plug them in your PC when necessary.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>You should probably use Linux</title>
+        <published>2021-04-29T00:00:00+00:00</published>
+        <updated>2021-04-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              BiRabittoh
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://birabittoh.github.io/blog/you-should-use-linux/"/>
+        <id>https://birabittoh.github.io/blog/you-should-use-linux/</id>
+        
+        <content type="html" xml:base="https://birabittoh.github.io/blog/you-should-use-linux/">&lt;h2 id=&quot;why-are-you-writing-this&quot;&gt;Why are you writing this?&lt;&#x2F;h2&gt;
+&lt;p&gt;As you probably know, I like using free software (free as in &lt;em&gt;freedom&lt;&#x2F;em&gt;, not free of charge). Most people see users with this mentality as a group of paranoid psychopaths who circlejerk about their custom systems. While that’s in part true, there’s much more to it.&lt;&#x2F;p&gt;
+&lt;p&gt;I often get asked by Windows or MacOS users about why they should think about switching to a GNU&#x2F;Linux OS (which I’ll be referring to as Linux); I’m just going to address everything here so I don’t have to repeat it to everyone who asks.&lt;&#x2F;p&gt;
+&lt;p&gt;I’ll try to address every aspect where Linux is objectively better than the competition, then look at some reasons you &lt;em&gt;could&lt;&#x2F;em&gt; have to stick to Windows or, like I did, set up a dual boot.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-is-free-software&quot;&gt;What is free software?&lt;&#x2F;h2&gt;
+&lt;p&gt;First of all, let’s read the official definition for it.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A program is free software if the program’s users have the four essential freedoms:
+0. The freedom to run the program as you wish, for any purpose.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;The freedom to study how the program works, and change it so it does your computing as you wish.&lt;&#x2F;li&gt;
+&lt;li&gt;The freedom to redistribute copies so you can help others.&lt;&#x2F;li&gt;
+&lt;li&gt;The freedom to distribute copies of your modified versions to others. By doing this you can give the whole community a chance to benefit from your changes.
+A program is free software if it gives users adequately all of these freedoms.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;philosophy&#x2F;free-sw.en.html&quot;&gt;Free Software Foundation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s examine how this freedom is beneficial.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;linux-is-open&quot;&gt;Linux is open&lt;&#x2F;h3&gt;
+&lt;p&gt;Using free software on an open source OS means you always know what’s going on with your PC; if you get curious or have any suspects you can always read the source code (or trust that somebody already did it in your place).&lt;&#x2F;p&gt;
+&lt;p&gt;The good thing about Linux is that it doesn’t hide anything from you. Whenever there’s a problem, you can read various logfiles (with different levels of detail) to identify and troubleshoot your problem; it’s also easier to fix problems since you actually know what each program and file does, while troubleshooting in closed-source OSes is like trying to fix a car engine without being able to open the hood.&lt;&#x2F;p&gt;
+&lt;p&gt;Some distros, like &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archlinux.org&#x2F;&quot;&gt;Arch Linux&lt;&#x2F;a&gt;, require you to set everything up from scratch; this means you always know exactly which programs you’re installing and their exact function inside the Linux environment. I would only advise this kind of installation to advanced users, but after you do it the first time you’ll certainly learn a lot about how a Linux OS actually works.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;linux-is-secure&quot;&gt;Linux is secure&lt;&#x2F;h3&gt;
+&lt;p&gt;Every single FOSS-oriented website makes this point, I’m just going to re-iterate it just to be sure.
+The source code being publicly available doesn’t make software less secure. In fact, it’s way more secure since more people can work on it and fix security flaws.
+&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Security_through_obscurity&quot;&gt;Security through obscurity&lt;&#x2F;a&gt; just doesn’t work. You can see that by looking at the number of security breaches that are found every day on closed-source software.&lt;&#x2F;p&gt;
+&lt;p&gt;If you make your software closed-source you’re basically betting you and your small team are able to create a better and more secure code than every single other person in the planet. Of course, this assumption is stupid and irrealistic, that’s why FOSS software will always be faster and more secure than closed-source alternatives.&lt;&#x2F;p&gt;
+&lt;p&gt;This goes for every kind of software, including the very operating system code. GNU&#x2F;Linux based operating systems are the most secure choice for every kind of user.
+More often than not, you can trust the software programmers without even reading the code yourself: since they’re sharing every single line of code, they probably don’t have anything to hide. If they do include malicious code, someone else will probably have noticed by now, provided you didn’t build and run that software straight from the repo a few minutes after the last commit lol&lt;&#x2F;p&gt;
+&lt;p&gt;You can also be safe against external attackers. Linux’s &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gs.statcounter.com&#x2F;os-market-share&#x2F;desktop&#x2F;worldwide&#x2F;#monthly-202012-202012-bar&quot;&gt;market share&lt;&#x2F;a&gt; on desktop and laptop PCs was less than 2% as of January 2021, and those people are probably much more tech-savy than the other OSes’ users…
+This means attackers will likely target Windows or OS X users, so you can be safe even without using an antivirus or anything similar (even though there &lt;em&gt;are&lt;&#x2F;em&gt; &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.clamav.net&#x2F;&quot;&gt;choices&lt;&#x2F;a&gt; for that, too).&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;linux-is-smarter&quot;&gt;Linux is smarter&lt;&#x2F;h3&gt;
+&lt;p&gt;Saying that Linux is for &lt;em&gt;everybody&lt;&#x2F;em&gt; would be a risky take. My point is that you &lt;em&gt;probably&lt;&#x2F;em&gt; could benefit from using a Linux system.&lt;&#x2F;p&gt;
+&lt;p&gt;If you’re a programmer, Linux is objectively the best OS you can use. As a programmer, I love using the terminal to do stuff more quickly. I also love the level of integration you can have with the system: a lot of programs are designed with a client&#x2F;server model, which makes them work in complex scenarios as long as you have the time and patience to configure them properly.&lt;&#x2F;p&gt;
+&lt;p&gt;While Windows still has to retain compatibility with legacy systems, Linux is much more free to do its own thing. Linux will always be smarter and more modern. Just think about the filesystem structure.
+Windows is forced to retain a confusing structure, where you have a ton of (not) hidden folders where programmers can store their necessary data… But there are so many choices and they’re not coherent! If I wanted to create a backup of all my settings and save files, I would have to copy all of these folders:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;C:\ProgramData; C:\Users\username\AppData; C:\Users\username\Documents\my games;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;And I would still miss all of the informations saved on the awful Windows Registry…&lt;&#x2F;p&gt;
+&lt;p&gt;On Linux, you just copy the .config folder in your home directory.&lt;&#x2F;p&gt;
+&lt;p&gt;Moreover, in Windows 10 you have two ways of editing system settings: the Control Panel and the Windows Settings. But  sometimes editing a setting on one side does NOT reflect on the other!
+Windows is literally the most confusing OS you can start with… And people still recommend it to beginners over Linux. It’s just dumb.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;linux-is-versatile&quot;&gt;Linux is versatile&lt;&#x2F;h3&gt;
+&lt;p&gt;Now, to the point everybody’s been waiting for. Yes, none of the Adobe programs will run &lt;em&gt;natively&lt;&#x2F;em&gt; on any Linux distro. That means if you’re a creative person and you need those programs on a daily basis, maybe you should consider dual booting…&lt;&#x2F;p&gt;
+&lt;p&gt;BUT, steps are being made in two different directions:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Valve is working on Proton, which allows the execution of most Windows-only applications and games on any Linux system.&lt;&#x2F;li&gt;
+&lt;li&gt;More and more open-source alternatives to closed-source standards are being developed by the day.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;While Proton is interesting, I always prefer to run open source software, especially if we’re talking about programs that are also free of charge: imagine trusting a closed-source software you didn’t pay for.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;Ok, now I’m getting repetitive so I’ll just get to the point.
+Linux is constantly evolving and it has now become the top choice for a lot of people, so let’s try and consider every use case.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you’re a professional that’s deep in the industry and you need some &lt;em&gt;specific&lt;&#x2F;em&gt; program to run perfectly on your device… Yeah, you should use Windows.&lt;&#x2F;li&gt;
+&lt;li&gt;If you’re a power user that’s just used to paid software, maybe consider trying out some open source alternative?&lt;&#x2F;li&gt;
+&lt;li&gt;If you’re a gamer, I say you should dual boot. I have a Windows 10 LTSC installation that I use &lt;em&gt;exclusively&lt;&#x2F;em&gt; for gaming. While Proton has made Linux gaming feasable, the experience isn’t always the best, especially if you play games that require millisecond-grade accuracy, like rhythm games or competitive shooters.&lt;&#x2F;li&gt;
+&lt;li&gt;If you’re a student or employee, Linux would be perfect for you. You can quickly take notes and do office work without the annoying Windows 10 updates popping up and rebooting your system seemingly at random. Also, any Linux system will probably be more light on resource usage than Windows, so you could take some old hardware you thought would never be using again and actually make something useful with it.&lt;&#x2F;li&gt;
+&lt;li&gt;If you work in the programming or engineering field, then what are you waiting for? You should try out a Linux OS as soon as possible, and not in a virtual machine. A lot of my friends said they didn’t like Linux because it felt slow… While running on a VM… Duh? Try it out on real hardware so you can feel its superiority.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Well, I can’t possibly cover &lt;em&gt;every&lt;&#x2F;em&gt; profession and use-case, but I hope I was clear about those I managed to list above.
+I’m going to conclude this article with some interesting links about Linux and FOSS you definitely should check out.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;islinuxabout.xyz&#x2F;&quot;&gt;Is Linux About…?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;usermod.net&#x2F;why-use-linux&#x2F;&quot;&gt;usermod.net - Why use Linux?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>

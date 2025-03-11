@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>BiRabittoh - minimalism</title>
+    <subtitle>Tech and privacy ramblings from a random italian dude.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://birabittoh.github.io/tags/minimalism/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://birabittoh.github.io/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-03-06T00:00:00+00:00</updated>
+    <id>https://birabittoh.github.io/tags/minimalism/atom.xml</id>
+    <entry xml:lang="en">
+        <title>My opinion on FOMO</title>
+        <published>2022-03-06T00:00:00+00:00</published>
+        <updated>2022-03-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              BiRabittoh
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://birabittoh.github.io/blog/fomo/"/>
+        <id>https://birabittoh.github.io/blog/fomo/</id>
+        
+        <content type="html" xml:base="https://birabittoh.github.io/blog/fomo/">&lt;h2 id=&quot;what-are-you-even-talking-about&quot;&gt;What are you even talking about&lt;&#x2F;h2&gt;
+&lt;p&gt;Let me preface this by saying I know nothing about psychology and behavioral studies, so anything you read here is just my personal opinion.&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s start with defining FOMO, to make sure we’re all on the same spectrum.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Fear of missing out (FOMO) is the feeling of apprehension that one is either not in the know or missing out on information, events, experiences, or life decisions that could make one’s life better.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Fear_of_missing_out&quot;&gt;Wikipedia&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The Fear Of Missing Out is what drives modern society; It keeps us hooked to mainstream social media and drives newbie investors towards obvious rugpulls.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.sciencedirect.com&#x2F;science&#x2F;article&#x2F;abs&#x2F;pii&#x2F;S0747563213000800&quot;&gt;Studies&lt;&#x2F;a&gt; have correlated it to various negative behaviors, like social media addiction and even distracted driving.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;am-i-affected-by-this&quot;&gt;Am I affected by this?&lt;&#x2F;h2&gt;
+&lt;p&gt;Probably. As long as you have a friend group and an account on any mainstream social network, yes you are.
+It’s the feeling that drives you to check out your friends’ Stories on Instagram, the dread you feel when somebody else reaches a life goal before you do, the fear that pushes people to buy limited-time merchandise before it runs out of stock.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;my-experience&quot;&gt;My experience&lt;&#x2F;h2&gt;
+&lt;p&gt;FOMO has been a constant for my entire life and just now I’m trying to write this as a way to think critically about it and try to avoid being pushed by stupid instincts. I’ve come to realize that Discord is the thing that slows down my productivity the most: as soon as I enter a voice chat with my friend, I stop being productive in any capacity and I’m also uncapable of resuming for the whole day.&lt;&#x2F;p&gt;
+&lt;p&gt;Even after I turn off my PC, I still think about what my friends are doing and what I’m missing out on, be it a Gartic Phone round or any stupid discussion I might have had on there. The biggest problem is, it’s entirely subconscious. I often find myself uncapable of concentrating and don’t know what’s the cause of it; I’ve been eliminating elements one by one to find out the cause of this and turns out that distancing myself totally from social media AND Discord actually solves it.&lt;&#x2F;p&gt;
+&lt;p&gt;It’s not immediate either, it took a few days for me but your mileage may vary depending on a lot of factors. Of course, I plan on restoring my online presence after I have graduated but it’s useful to know what exactly was causing me to waste all of my time for months.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;any-solutions&quot;&gt;Any solutions?&lt;&#x2F;h2&gt;
+&lt;p&gt;I think you should evaluate possible solutions yourself, as FOMO is strictly dependant on your personality and experiences. You could try eliminating or replacing parts of your habits regularly, like I did, to find out if something is more destructive than you might initially think.&lt;&#x2F;p&gt;
+&lt;p&gt;As I was researching this, I found out about JOMO. It stands for “Joy Of Missing Out” and it’s the exact opposite thing.
+Embracing JOMO means you dedicate a few hours of the day to yourself and stop worrying about how your friends are doing at life and which continent gets invaded next.&lt;&#x2F;p&gt;
+&lt;p&gt;Modern society does not wait for anybody, there’s nothing wrong in taking a break and focusing on yourself. You can always catch up later.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;gopher:&#x2F;&#x2F;republic.circumlunar.space:70&#x2F;0&#x2F;~katolaz&#x2F;phlog&#x2F;20190219_fomo.txt&quot;&gt;Another interesting article about FOMO&lt;&#x2F;a&gt;, on Gopher;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gopherproxy.vern.cc&#x2F;gopher&#x2F;republic.circumlunar.space:70&#x2F;0&#x2F;~katolaz&#x2F;phlog&#x2F;20190219_fomo.txt&quot;&gt;Same article&lt;&#x2F;a&gt;, but proxied to be viewed on modern browsers.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Modern web bloat</title>
+        <published>2021-04-09T00:00:00+00:00</published>
+        <updated>2021-04-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              BiRabittoh
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://birabittoh.github.io/blog/modern-web-bloat/"/>
+        <id>https://birabittoh.github.io/blog/modern-web-bloat/</id>
+        
+        <content type="html" xml:base="https://birabittoh.github.io/blog/modern-web-bloat/">&lt;p&gt;This is it. My first blog post; I suppose this officially makes be a boomer.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;inspiration&quot;&gt;Inspiration&lt;&#x2F;h2&gt;
+&lt;p&gt;Some time ago I stumbled upon a &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;invidio.us&#x2F;cvDyQUpaFf4&quot;&gt;video&lt;&#x2F;a&gt;, where the popular Linux influencer &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;lukesmith.xyz&quot;&gt;Luke Smith&lt;&#x2F;a&gt; talked about the effort of looking up a Chicken Parmesan recipe in 2021 without having any adblock or privacy extensions enabled.&lt;&#x2F;p&gt;
+&lt;p&gt;That’s because most modern websites take a lot of time to load framework files, ads and trackers. While that’s kinda functional, I think we should change our habits and start making simple websites again.&lt;&#x2F;p&gt;
+&lt;p&gt;Yeah, this looks like a first world problem and it probably is, but it’s not as subtle as you think. I’m actually convinced that the internet could actually benefit from this way of thinking, and that’s what I’m going to talk about.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;&#x2F;h2&gt;
+&lt;p&gt;In the early days of the internet, it was common for webpages to be written using only HTML, so we had very ugly but functional websites.&lt;&#x2F;p&gt;
+&lt;p&gt;As technology went on, sites needed to get more modern-looking and interactive; that’s why CSS and JavaScript were introduced into the mix, allowing for dynamic websites that could actually change based on user input.
+As of nowadays, a lot more stuff went into the mix, to the point where the browser is now the most common program we use in our OS: you can, in fact, use it for doing things that 15+ years ago required external programs, like:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;playing music and video,&lt;&#x2F;li&gt;
+&lt;li&gt;reading PDF files,&lt;&#x2F;li&gt;
+&lt;li&gt;doing office work,&lt;&#x2F;li&gt;
+&lt;li&gt;checking e-mail,&lt;&#x2F;li&gt;
+&lt;li&gt;cloud storage,&lt;&#x2F;li&gt;
+&lt;li&gt;etc…&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I guess people just find it more comfortable if they can do everything with a single program, and they’re not to blame for that. This IS the easiest approach for unexperienced people: just have a program that does everything, instead of having to learn how to use a bunch of different software.&lt;&#x2F;p&gt;
+&lt;p&gt;This plethora of uses is possible today because of the existence of various libraries and frameworks that simplify JavaScript and CSS and make them easier to develop complicated websites with.
+This is good for basic web users who just want functional websites, and great for developers since they can easily code advanced functions inside the browser, which makes them work in every OS.&lt;&#x2F;p&gt;
+&lt;p&gt;Sadly, this brings us to the problem: any modern website has become a burden for any browser to load, since our browser needs to download and parse through each library and often fill the page content as you scroll through.
+In his video, Luke Smith found that a simple Chicken Parmesan recipe would take up to 5-10 megabytes, which doesn’t sound like a lot, but it actually is.&lt;&#x2F;p&gt;
+&lt;p&gt;It’s easier to understand it if you think about it with video-games; any game on 16-bit consoles and earlier, including full-fledged 30+ hour adventures like Final Fantasy 6 and Chrono Trigger, weighs less than one single recipe page (as stated &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blogs.umass.edu&#x2F;Techbytes&#x2F;2014&#x2F;02&#x2F;10&#x2F;history-of-gaming-storage&#x2F;#attachment_2827&quot;&gt;here&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-solution&quot;&gt;The solution&lt;&#x2F;h2&gt;
+&lt;p&gt;Well, I don’t think this “problem” is getting solved soon, as new frameworks for web development are constantly being introduced. Sadly, it’s a one-way train, but if you’re a web-dev you could actually make a difference yourself!&lt;&#x2F;p&gt;
+&lt;p&gt;I mean, this can not apply to all websites. Some of them just NEED to be as responsive and interactive as they are; most of them actually just became bloated at a certain time period (probably mid-2000s) when having a flashy website was cool and different from what everyone else had.
+Nowadays you can make a difference by using plain HTML and CSS for your website: this ensures your pages will load instantly and be compatible even with the oldest of browsers!
+If you like this philosophy, you can check out other projects that aim for a simpler and faster web, like these ones:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;&#x2F;gemini.circumlunar.space&#x2F;&quot;&gt;gemini:&#x2F;&#x2F;&lt;&#x2F;a&gt;: a new, purposefully limited, internet protocol;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;based.cooking&#x2F;&quot;&gt;based.cooking&lt;&#x2F;a&gt;: a modern recipe website based on user collaboration via GitHub;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiby.me&#x2F;&quot;&gt;wiby.me&lt;&#x2F;a&gt;: a search engine that aims to only index classic style webpages.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>
